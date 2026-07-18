@@ -4,7 +4,7 @@ title Adone Updates Installer
 
 net session >nul 2>&1
 if %errorlevel% neq 0 (
-    echo Requesting admin privileges...
+    echo ...
     powershell -Command "Start-Process '%~f0' -Verb RunAs"
     exit /b
 )
